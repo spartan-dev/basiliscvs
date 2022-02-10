@@ -2,10 +2,11 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../styles/index.css"
+import Header from "../components/header"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <section className="hero"></section>
+    <Header />
     {/*   <StaticImage
       src="../images/BASILISCUS_COMPLETO_BLANCO.png"
       quality={95}

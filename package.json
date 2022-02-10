@@ -1,34 +1,39 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "band basiliscus medievalk folk",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "salemm  <s.e.jugr@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.5.1",
     "gatsby-plugin-gatsby-cloud": "^4.5.0",
     "gatsby-plugin-image": "^2.5.0",
     "gatsby-plugin-manifest": "^4.5.0",
     "gatsby-plugin-offline": "^5.5.0",
     "gatsby-plugin-react-helmet": "^5.5.0",
+    "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-sharp": "^4.5.0",
+    "gatsby-plugin-styled-components": "^5.6.0",
     "gatsby-source-filesystem": "^4.5.0",
     "gatsby-transformer-sharp": "^4.5.0",
     "prop-types": "^15.8.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "gatsby-plugin-postcss": "^5.5.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
-    "tailwindcss": "^3.0.15"
+    "tailwindcss": "^3.0.15",
+    "svg-react-loader": "^0.4.6"
   },
   "keywords": [
     "gatsby"
