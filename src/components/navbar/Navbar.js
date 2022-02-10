@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { isBrowser } from "../../utils"
 import SkullIcon from "../../images/svg/BASILISCUS_CRANEO2.inline.svg"
 import Button from "../button"
 import "./navbar.css"
@@ -10,18 +11,27 @@ function Navbar() {
   const handleClick = () => setClick(!click)
   const closeMobileMenu = e => setClick(false)
   const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false)
+    if (!isBrowser) {
+      return
     } else {
-      setButton(true)
+      if (window.innerWidth <= 960) {
+        setButton(false)
+      } else {
+        setButton(true)
+      }
     }
   }
 
   useEffect(() => {
     showButton()
   }, [])
-
-  window.addEventListener("resize", showButton)
+  /*  if (!isBrowser) {
+    return
+  } else {
+    console.log(isBrowser, "si sale")
+    window.addEventListener("resize", showButton)
+  } */
+  typeof window !== "undefined" && window.addEventListener("resize", showButton)
   return (
     <>
       <nav className={click ? "navbar active" : "navbar"}>
@@ -80,6 +90,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 href="https://www.facebook.com/basiliscusrex"
+                rel="noreferrer"
                 target="_blank"
                 onClick={closeMobileMenu}
               >
@@ -91,6 +102,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 href="https://www.instagram.com/basiliscus_oficial/?hl=en"
+                rel="noreferrer"
                 target="_blank"
                 onClick={closeMobileMenu}
               >

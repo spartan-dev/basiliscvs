@@ -22,7 +22,7 @@ const Button = ({
   return (
     <>
       {external ? (
-        <a href={location} target="_blank">
+        <a href={location} target="_blank" rel="noopener noreferrer">
           <button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             type={type}
