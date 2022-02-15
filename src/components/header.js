@@ -1,9 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-
 import Button from "./button"
 import "../styles/index.css"
-//const stormIntro = require("../video/stormPRO.mp4")
 import stormIntro from "../video/stormPRO.mp4"
 const Header = ({ siteTitle }) => (
   <div className="hero-container">

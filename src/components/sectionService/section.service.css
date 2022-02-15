@@ -1,0 +1,121 @@
+.section-base-container {
+  position: relative;
+}
+
+.bigspace {
+  background: black none repeat scroll 0% 0%;
+  flex-direction: column;
+  word-break: break-word;
+  padding: 80px 0px;
+  display: flex;
+  overflow: hidden;
+}
+
+.inner-container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+.section-header {
+  color: white;
+  text-align: center;
+  max-width: 900px;
+  margin: 0px auto 50px;
+  font-family: "Staatliches";
+  font-weight: 400;
+  font-size: 36.32px;
+  user-select: text;
+  position: relative;
+  white-space: pre-line;
+}
+
+.mini-cards {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-box-pack: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: -50px auto 0px;
+  word-break: break-word;
+}
+
+.service-card {
+  margin: 50px 0px 0px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  -moz-box-align: center;
+  align-items: center;
+  text-align: center;
+  max-width: 360px;
+  min-width: 280px;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+.skull-icon {
+  height: 60px;
+}
+.card-header {
+  user-select: none;
+  text-align: center;
+  word-break: break-word;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #0000 linear-gradient(-180deg, #44355b 0%, #a9112a 96%) repeat
+    scroll 0% 0%;
+  box-shadow: none;
+  pointer-events: none;
+  text-align: center;
+  word-break: break-word;
+}
+.circle-style {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+}
+.card-separator {
+  width: 100%;
+  height: 2px;
+  background: #44355b none repeat scroll 0% 0%;
+  margin-top: 20px;
+  position: relative;
+}
+.card-separator::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #44355b none repeat scroll 0% 0%;
+}
+.card-body {
+  margin: 40px 20px 0px;
+}
+.card-title {
+  color: white;
+  margin: 0px;
+}
+.card-paragraph {
+  color: white;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 960px) {
+  .circle-style {
+    height: 1.15rem;
+  }
+}
