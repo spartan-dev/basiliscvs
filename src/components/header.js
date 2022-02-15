@@ -11,8 +11,9 @@ const Header = ({ siteTitle }) => (
       <source src={stormIntro} type="video/mp4" />
       Your browser does not support HTML5 video
     </video>
-    <h1>Basiliscvs</h1>
-    <p>Surge, cane et salta. </p>
+    <h1>Surge, cane et salta.</h1>
+    <h1 className="for-mobil">Basiliscus</h1>
+    <p className="for-mobil">Surge, cane et salta. </p>
     {/*levantate, canta y salta. Grita desde tu corazon y regocijate */}
     <div className="hero-btns">
       <Button
