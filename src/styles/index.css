@@ -31,11 +31,18 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+h5,
 h6 {
   font-family: Staatliches;
   font-weight: 400;
   font-size: 22.16px;
   margin-bottom: 0.3em;
+}
+a {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20.16px;
+  line-height: 1.4;
 }
 p {
   font-family: "Raleway";

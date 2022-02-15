@@ -3,7 +3,7 @@ import SkullIcon from "../../images/svg/BASILISCUS_CRANEO2.inline.svg"
 import "./section.service.css"
 const SectionService = () => {
   return (
-    <section className="section-base-container">
+    <section id="services" className="section-base-container">
       <div className="bigspace">
         <div className="inner-container">
           <h4 className="section-header">Nuestros Servicios</h4>
@@ -27,7 +27,7 @@ const SectionService = () => {
               </div>
             </div>
             <div className="service-card">
-            <div className="card-container">
+              <div className="card-container">
                 <div className="card-header">
                   <div className="circle">
                     <div className="circle-style">
@@ -39,13 +39,14 @@ const SectionService = () => {
                 <div className="card-body">
                   <h6 className="sm-word-wrap card-title">Eventos Sociales</h6>
                   <p className="card-paragraph">
-                  Participamos en eventos al aire libre y podemos colaborar con otros grupos
+                    Participamos en eventos al aire libre y podemos colaborar
+                    con otros grupos
                   </p>
                 </div>
               </div>
             </div>
             <div className="service-card">
-            <div className="card-container">
+              <div className="card-container">
                 <div className="card-header">
                   <div className="circle">
                     <div className="circle-style">
@@ -57,7 +58,8 @@ const SectionService = () => {
                 <div className="card-body">
                   <h6 className="sm-word-wrap card-title">Musica en sitio</h6>
                   <p className="card-paragraph">
-                  También podemos interpretar música en tu bar , restaurante o lugar especial
+                    También podemos interpretar música en tu bar , restaurante o
+                    lugar especial
                   </p>
                 </div>
               </div>

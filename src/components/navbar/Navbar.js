@@ -68,13 +68,21 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="#services"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Services
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Biografia
+              <Link
+                to="#contact"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Contacto
               </Link>
             </li>
 
@@ -84,7 +92,7 @@ function Navbar() {
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Banda
+                Bios
               </Link>
             </li>
             <li className="nav-item">
@@ -111,8 +119,20 @@ function Navbar() {
                 </span>
               </a>
             </li>
+            <li className="nav-item">
+              <a
+                href="https://api.whatsapp.com/send?phone=525586824354"
+                target="_blank"
+                rel="noreferrer"
+                onClick={closeMobileMenu}
+              >
+                <span className="nav-links">
+                  <i className="fab fa-whatsapp"></i>
+                </span>
+              </a>
+            </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">Banda</Button>}
+          {button && <Button buttonStyle="btn--outline">Bios</Button>}
         </div>
       </nav>
     </>
