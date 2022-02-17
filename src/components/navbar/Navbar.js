@@ -121,6 +121,18 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a
+                href="https://www.tiktok.com/@basiliscvs"
+                target="_blank"
+                rel="noreferrer"
+                onClick={closeMobileMenu}
+              >
+                <span className="nav-links">
+                  <i className="fab fa-tiktok"></i>
+                </span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
                 href="https://api.whatsapp.com/send?phone=525586824354"
                 target="_blank"
                 rel="noreferrer"
@@ -132,7 +144,7 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">Bios</Button>}
+          {button && <Button buttonStyle="btn--outline">Biografia</Button>}
         </div>
       </nav>
     </>
