@@ -108,6 +108,8 @@
   }
 
   .nav-menu.active {
+    display: flex;
+    flex-direction: row;
     background: #000;
     left: 0;
     opacity: 1;
@@ -136,13 +138,25 @@
   }
 
   .menu-icon {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+  }
+  .below-text {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 200px;
+    left: -7px;
+  }
+  .click-text {
+    font-weight: 100;
+    font-size: 16.16px;
   }
   .skull-icon {
     height: 60px;

@@ -36,18 +36,20 @@ function Navbar() {
     <>
       <nav className={click ? "navbar active" : "navbar"}>
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <StaticImage
-              src="../../images/BASILISCUS_LOGO_TRANSPARENTE.png"
-              alt="basiliscus logo"
-              placeholder="the serpent"
-              layout="fixed"
-              width={180}
-              height={70}
-            />
-            {/*   TRVL
+          <div>
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              <StaticImage
+                src="../../images/BASILISCUS_LOGO_TRANSPARENTE.png"
+                alt="basiliscus logo"
+                placeholder="the serpent"
+                layout="fixed"
+                width={180}
+                height={70}
+              />
+              {/*   TRVL
             <i className="fab fa-typo3" /> */}
-          </Link>
+            </Link>
+          </div>
           <div
             className="menu-icon"
             onClick={handleClick}
@@ -57,23 +59,32 @@ function Navbar() {
             {click ? (
               <i className="fas fa-times" />
             ) : (
-              <SkullIcon className="skull-icon" />
+              <div>
+                <div>
+                  <SkullIcon className="skull-icon" />
+                </div>
+                <div className="below-text">
+                  <p className="click-text">Click me!</p>
+                </div>
+              </div>
             )}
             {/*  <i className={click ? "fas fa-times" : "fas fa-bars"} /> */}
           </div>
+        </div>
+        <section>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Eventos
               </Link>
-            </li>
-            <li className="nav-item">
+            </li> */}
+            {/* <li className="nav-item">
               <Link
                 to="#services"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Services
+                Servicios
               </Link>
             </li>
             <li className="nav-item">
@@ -84,9 +95,9 @@ function Navbar() {
               >
                 Contacto
               </Link>
-            </li>
+            </li> */}
 
-            <li>
+            {/*  <li>
               <Link
                 to="/"
                 className="nav-links-mobile"
@@ -94,7 +105,7 @@ function Navbar() {
               >
                 Bios
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a
                 href="https://www.facebook.com/basiliscusrex"
@@ -109,7 +120,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                href="https://www.instagram.com/basiliscus_oficial/?hl=en"
+                href="https://www.instagram.com/basiliscvs"
                 rel="noreferrer"
                 target="_blank"
                 onClick={closeMobileMenu}
@@ -144,8 +155,9 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">Biografia</Button>}
-        </div>
+        </section>
+        {/*           {button && <Button buttonStyle="btn--outline">Biografia</Button>}
+         */}{" "}
       </nav>
     </>
   )

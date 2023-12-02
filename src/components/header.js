@@ -9,29 +9,29 @@ const Header = ({ siteTitle }) => (
       <source src={stormIntro} type="video/mp4" />
       Your browser does not support HTML5 video
     </video>
-    <h1>Surge, cane et salta.</h1>
+    {/* Surge, cane et salta. */}
+    <h1>#feravicanus</h1>
     <h1 className="for-mobil">Basiliscus</h1>
-    <p className="for-mobil">Surge, cane et salta. </p>
+    <p className="for-mobil">#feravicanus. </p>
     {/*levantate, canta y salta. Grita desde tu corazon y regocijate */}
     <div className="hero-btns">
-      <Button
+      {/*  <Button
         className="btns"
         buttonStyle="btn--outline"
         buttonSize="btn--large"
       >
-        {/* mandar a el apartado de ventas */}
         Lets Rock
-      </Button>
+      </Button> */}
 
       <Button
         className="btns"
-        buttonStyle="btn--primary"
+        buttonStyle="btn--outline"
         buttonSize="btn--large"
         external={true}
         location={"https://www.youtube.com/channel/UCMNGc5s7Gmzxrm0X1GYsQHg"}
       >
         {/* enviar al canal de youtube */}
-        watch trailer
+        YouTube
         <i className="fas fa-play-circle" />
       </Button>
     </div>
