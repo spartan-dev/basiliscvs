@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Button from "./button"
 import "../styles/index.css"
 import stormIntro from "../video/stormPRO.mp4"
+
 const Header = ({ siteTitle }) => (
   <div className="hero-container">
     <video preload="auto" autoPlay={true} loop={true} muted={true}>
