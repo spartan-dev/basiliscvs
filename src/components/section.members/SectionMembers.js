@@ -62,7 +62,7 @@ const SectionMembers = () => (
         />
       </div>
       <p className="members-eyebrow">Choose your fighter</p>
-      <h4 className="section-header members-title">Los Guerreros</h4>
+      <h4 className="section-header members-title">The Fangs</h4>
 
       <div className="members-scroll">
         {members.map(member => (

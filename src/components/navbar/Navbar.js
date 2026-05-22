@@ -6,7 +6,7 @@ import "./navbar.css"
 
 const NAV_LINKS = [
   { label: "Nosotros", id: "about" },
-  { label: "Guerreros", id: "members" },
+  { label: "Fangs", id: "members" },
   { label: "Servicios", id: "services" },
   { label: "Galería", id: "gallery" },
   { label: "Contacto", id: "contact" },

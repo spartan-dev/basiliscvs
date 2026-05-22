@@ -111,7 +111,7 @@ const SectionGallery = () => {
         </div>
 
         <div className="gallery-social-cta">
-          <p>Seguinos para más momentos</p>
+          <p>Síguenos para más momentos</p>
           <div className="gallery-cta-links">
             <a
               href="https://www.instagram.com/basiliscvs/"
