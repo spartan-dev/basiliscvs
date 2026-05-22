@@ -19,11 +19,9 @@ const SectionGallery = () => {
         nodes {
           id
           name
-          thumb: childImageSharp {
+          publicURL
+          childImageSharp {
             gatsbyImageData(width: 600, quality: 82, placeholder: BLURRED)
-          }
-          full: childImageSharp {
-            gatsbyImageData(quality: 90, placeholder: BLURRED, layout: FULL_WIDTH)
           }
         }
       }
@@ -83,7 +81,7 @@ const SectionGallery = () => {
               aria-label={`Ver foto ${img.name}`}
             >
               <GatsbyImage
-                image={getImage(img.thumb)}
+                image={getImage(img.childImageSharp)}
                 alt={img.name}
                 className="masonry-img"
               />
@@ -102,7 +100,7 @@ const SectionGallery = () => {
               aria-label={`Ver foto ${img.name}`}
             >
               <GatsbyImage
-                image={getImage(img.thumb)}
+                image={getImage(img.childImageSharp)}
                 alt={img.name}
                 className="carousel-img"
               />
@@ -162,11 +160,10 @@ const SectionGallery = () => {
             className="lightbox-content"
             onClick={e => e.stopPropagation()}
           >
-            <GatsbyImage
-              image={getImage(images[lightbox.index].full)}
+            <img
+              src={images[lightbox.index].publicURL}
               alt={images[lightbox.index].name}
               className="lightbox-img"
-              objectFit="contain"
             />
             <p className="lightbox-counter">
               {lightbox.index + 1} / {images.length}

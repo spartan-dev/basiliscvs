@@ -185,8 +185,12 @@
 }
 
 .lightbox-img {
+  display: block;
   max-width: 90vw;
   max-height: 82vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   border-radius: 3px;
 }
 
