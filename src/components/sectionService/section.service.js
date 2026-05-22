@@ -19,9 +19,10 @@ const SectionService = () => {
                 </div>
                 <div className="card-separator"></div>
                 <div className="card-body">
-                  <h6 className="sm-word-wrap card-title">Fiesta Privadas</h6>
+                  <h6 className="sm-word-wrap card-title">Festivales & Ferias Medievales</h6>
                   <p className="card-paragraph">
-                    Podemos tocar en tu fiesta privada y animar a nuestro estilo
+                    Llevamos nuestro ritual sonoro a festivales al aire libre y ferias medievales.
+                    Una presencia que impone, que invoca y que no se olvida.
                   </p>
                 </div>
               </div>
@@ -37,10 +38,10 @@ const SectionService = () => {
                 </div>
                 <div className="card-separator"></div>
                 <div className="card-body">
-                  <h6 className="sm-word-wrap card-title">Eventos Sociales</h6>
+                  <h6 className="sm-word-wrap card-title">Bodas & Celebraciones</h6>
                   <p className="card-paragraph">
-                    Participamos en eventos al aire libre y podemos colaborar
-                    con otros grupos
+                    Transformamos tu celebración en un rito de otro tiempo. Para bodas temáticas,
+                    eventos culturales y fiestas donde lo ordinario no tiene cabida.
                   </p>
                 </div>
               </div>
@@ -56,10 +57,10 @@ const SectionService = () => {
                 </div>
                 <div className="card-separator"></div>
                 <div className="card-body">
-                  <h6 className="sm-word-wrap card-title">Musica en sitio</h6>
+                  <h6 className="sm-word-wrap card-title">Espacios & Eventos Privados</h6>
                   <p className="card-paragraph">
-                    También podemos interpretar música en tu bar , restaurante o
-                    lugar especial
+                    Música con alma antigua para bares, restaurantes y fiestas privadas.
+                    También disponibles para eventos corporativos con concepto alternativo.
                   </p>
                 </div>
               </div>

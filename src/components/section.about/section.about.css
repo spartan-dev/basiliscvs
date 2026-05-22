@@ -1,0 +1,168 @@
+.about-container {
+  background: #0a0a0a;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background texture using radial gradient */
+.about-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(68, 53, 91, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.about-inner {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about-title {
+  color: white;
+  text-align: center;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 36.32px;
+  margin: 0 auto 60px;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(-180deg, #44355b 0%, #a9112a 96%);
+  margin: 16px auto 0;
+}
+
+/* Two-column grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left column */
+.about-skull-deco {
+  margin-bottom: 24px;
+}
+
+.about-skull-icon {
+  height: 48px;
+  opacity: 0.7;
+}
+
+.about-bio {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 0 40px;
+}
+
+/* Tag rows */
+.about-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-tag-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.about-tag-label {
+  flex-shrink: 0;
+  font-family: "Staatliches", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: white;
+  background: linear-gradient(-180deg, #44355b 0%, #a9112a 96%);
+  padding: 4px 10px;
+  border-radius: 3px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.about-tag-value {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 4px;
+  line-height: 1.5;
+}
+
+/* Right column – image */
+.about-image-col {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(68, 53, 91, 0.5);
+  box-shadow: 0 0 40px rgba(169, 17, 42, 0.15);
+}
+
+.about-photo {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-image-col {
+    order: -1;
+  }
+
+  .about-photo {
+    height: 300px;
+  }
+
+  .about-image-frame {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-tag-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .about-tag-label {
+    min-width: auto;
+    align-self: flex-start;
+  }
+}

@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: `https://www.basiliscvs.org`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-postcss`,
     {
@@ -18,17 +17,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
           include: /\.inline\.svg$/,
-          options: {
-            name: "MyIcon",
-            filters: [value => console.log(value)],
-          },
-        }, // See below to configure properly
+        },
       },
     },
     {

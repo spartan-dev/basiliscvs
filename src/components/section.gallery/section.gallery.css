@@ -1,0 +1,274 @@
+.gallery-section {
+  background: #080808;
+  padding: 80px 0 60px;
+  position: relative;
+}
+
+.gallery-inner {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.gallery-title {
+  color: white;
+  text-align: center;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 36.32px;
+  margin: 0 auto 8px;
+  position: relative;
+}
+
+.gallery-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(-180deg, #44355b 0%, #a9112a 96%);
+  margin: 16px auto 0;
+}
+
+.gallery-subtitle {
+  color: rgba(255, 255, 255, 0.45);
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0 48px;
+}
+
+/* ── MASONRY (desktop) ─────────────────────────────── */
+.gallery-masonry {
+  columns: 3;
+  column-gap: 10px;
+}
+
+.masonry-item {
+  display: block;
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: none;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.masonry-img {
+  display: block;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.masonry-hover {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(169, 17, 42, 0.55) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.masonry-item:hover .masonry-img {
+  transform: scale(1.04);
+}
+
+.masonry-item:hover .masonry-hover {
+  opacity: 1;
+}
+
+.masonry-item:focus-visible {
+  outline: 2px solid #a9112a;
+  outline-offset: 2px;
+}
+
+/* ── CAROUSEL (mobile) ─────────────────────────────── */
+.gallery-carousel {
+  display: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding-bottom: 12px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.gallery-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 80vw;
+  scroll-snap-align: center;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* ── SOCIAL CTA ─────────────────────────────────────── */
+.gallery-social-cta {
+  margin-top: 52px;
+  text-align: center;
+}
+
+.gallery-social-cta p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.gallery-cta-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border: 1px solid rgba(68, 53, 91, 0.7);
+  border-radius: 3px;
+  color: white;
+  font-family: "Staatliches", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(-180deg, #44355b 0%, #a9112a 96%);
+  border-color: transparent;
+}
+
+/* ── LIGHTBOX ───────────────────────────────────────── */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 82vh;
+  border-radius: 3px;
+}
+
+.lightbox-counter {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  margin-top: 12px;
+  letter-spacing: 0.1em;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 8px;
+  transition: color 0.2s;
+}
+
+.lightbox-close:hover {
+  color: #a9112a;
+}
+
+.lightbox-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 16px 18px;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+
+.lightbox-arrow:hover {
+  background: rgba(169, 17, 42, 0.6);
+}
+
+.lightbox-prev {
+  left: 16px;
+}
+
+.lightbox-next {
+  right: 16px;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────── */
+@media screen and (max-width: 960px) {
+  .gallery-masonry {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gallery-masonry {
+    display: none;
+  }
+
+  .gallery-carousel {
+    display: flex;
+  }
+
+  .lightbox-arrow {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+
+  .lightbox-prev {
+    left: 8px;
+  }
+
+  .lightbox-next {
+    right: 8px;
+  }
+}

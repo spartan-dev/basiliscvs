@@ -28,7 +28,7 @@ const SectionContact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    basilisvs@gmail.com
+                    basiliscvs@gmail.com
                   </a>
                 </div>
               </div>

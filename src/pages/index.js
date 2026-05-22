@@ -3,17 +3,22 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../styles/index.css"
 import Header from "../components/header"
+import SectionAbout from "../components/section.about"
 import SectionServices from "../components/sectionService"
 import SectionContact from "../components/section.contact"
-import SectionEvents from "../components/section.events"
+import SectionGallery from "../components/section.gallery"
+// SectionEvents kept as reference, replaced by SectionGallery
+
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
     <Header />
+    <SectionAbout />
     <SectionServices />
+    <SectionGallery />
     <SectionContact />
-    {/*  <SectionEvents /> */}
   </Layout>
 )
+
+export const Head = () => <Seo title="Basiliscvs" />
 
 export default IndexPage
