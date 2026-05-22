@@ -6,7 +6,7 @@ const SectionService = () => {
     <section id="services" className="section-base-container">
       <div className="bigspace">
         <div className="inner-container">
-          <h4 className="section-header">Nuestros Servicios</h4>
+          <h2 className="section-header">Nuestros Servicios</h2>
           <div className="mini-cards">
             <div className="service-card">
               <div className="card-container">
@@ -19,7 +19,7 @@ const SectionService = () => {
                 </div>
                 <div className="card-separator"></div>
                 <div className="card-body">
-                  <h6 className="sm-word-wrap card-title">Festivales & Ferias Medievales</h6>
+                  <h3 className="sm-word-wrap card-title">Festivales & Ferias Medievales</h3>
                   <p className="card-paragraph">
                     Llevamos nuestro ritual sonoro a festivales al aire libre y ferias medievales.
                     Una presencia que impone, que invoca y que no se olvida.
@@ -38,7 +38,7 @@ const SectionService = () => {
                 </div>
                 <div className="card-separator"></div>
                 <div className="card-body">
-                  <h6 className="sm-word-wrap card-title">Bodas & Celebraciones</h6>
+                  <h3 className="sm-word-wrap card-title">Bodas & Celebraciones</h3>
                   <p className="card-paragraph">
                     Transformamos tu celebración en un rito de otro tiempo. Para bodas temáticas,
                     eventos culturales y fiestas donde lo ordinario no tiene cabida.
@@ -57,7 +57,7 @@ const SectionService = () => {
                 </div>
                 <div className="card-separator"></div>
                 <div className="card-body">
-                  <h6 className="sm-word-wrap card-title">Espacios & Eventos Privados</h6>
+                  <h3 className="sm-word-wrap card-title">Espacios & Eventos Privados</h3>
                   <p className="card-paragraph">
                     Música con alma antigua para bares, restaurantes y fiestas privadas.
                     También disponibles para eventos corporativos con concepto alternativo.

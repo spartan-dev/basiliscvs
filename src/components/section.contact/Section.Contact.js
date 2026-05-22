@@ -41,7 +41,7 @@ const SectionContact = () => {
                       </div>
                     </div>
                   </div>
-                  <h5 className="contact-title">Para eventos y contrataciones</h5>
+                  <h3 className="contact-title">Para eventos y contrataciones</h3>
                   <a className="contact-link" href="mailto:basiliscvs@gmail.com" target="_blank" rel="noreferrer">
                     basiliscvs@gmail.com
                   </a>
@@ -57,7 +57,7 @@ const SectionContact = () => {
                       </div>
                     </div>
                   </div>
-                  <h5 className="contact-title">WhatsApp</h5>
+                  <h3 className="contact-title">WhatsApp</h3>
                   <a className="contact-link" href="https://api.whatsapp.com/send?phone=525586824354" target="_blank" rel="noreferrer">
                     +52 55 8682 4354
                   </a>

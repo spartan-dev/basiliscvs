@@ -76,7 +76,7 @@ const TikTokEmbed = ({ id }) => {
 const SectionVideos = () => (
   <section id="videos" className="videos-section">
     <div className="videos-inner">
-      <h4 className="section-header videos-title">En Vivo</h4>
+      <h2 className="section-header videos-title">En Vivo</h2>
       <p className="videos-subtitle">El ritual no se describe. Se presencia.</p>
 
       <div className="videos-grid">

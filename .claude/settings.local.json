@@ -31,7 +31,23 @@
       "Bash(rm -f pnpm-lock.yaml && source ~/.nvm/nvm.sh && nvm use 20 && pnpm install 2>&1)",
       "Bash(source ~/.nvm/nvm.sh && nvm use 20 && pnpm approve-builds --all 2>&1)",
       "Bash(git add \\\\\n  .nvmrc \\\\\n  pnpm-lock.yaml \\\\\n  pnpm-workspace.yaml \\\\\n  gatsby-config.js \\\\\n  package.json \\\\\n  yarn.lock \\\\\n  .vscode/settings.json \\\\\n  src/components/navbar/Navbar.js \\\\\n  src/components/navbar/navbar.css \\\\\n  src/components/section.contact/Section.Contact.js \\\\\n  src/components/section.gallery/ \\\\\n  src/components/section.about/ \\\\\n  src/components/sectionService/section.service.js \\\\\n  src/components/seo.js \\\\\n  src/pages/404.js \\\\\n  src/pages/index.js)",
-      "Bash(git commit -m \"$\\(cat <<'EOF'\nrefactor: Gatsby 5 migration, pnpm, new sections and navbar rebuild\n\n- Migrate Gatsby 4 → 5, React 17 → 18, drop react-helmet for Head API\n- Switch yarn → pnpm, pin Node 20 via .nvmrc\n- Remove unused deps: react-helmet, styled-components, gatsby-plugin-gatsby-cloud, FontAwesome npm packages\n- Add SectionAbout with bio, instruments and style tags\n- Add SectionGallery: masonry grid \\(desktop\\), snap carousel \\(mobile\\), lightbox with keyboard nav\n- Rebuild Navbar: full-screen mobile overlay with nav links + social icons, transparent→solid on scroll, fix event listener memory leak\n- Improve SectionServices copy to match band voice and target markets\n- Fix email typo in SectionContact \\(basilisvs → basiliscvs\\)\n- Remove debug console.log from gatsby-config.js\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<'EOF'\nrefactor: Gatsby 5 migration, pnpm, new sections and navbar rebuild\n\n- Migrate Gatsby 4 → 5, React 17 → 18, drop react-helmet for Head API\n- Switch yarn → pnpm, pin Node 20 via .nvmrc\n- Remove unused deps: react-helmet, styled-components, gatsby-plugin-gatsby-cloud, FontAwesome npm packages\n- Add SectionAbout with bio, instruments and style tags\n- Add SectionGallery: masonry grid \\(desktop\\), snap carousel \\(mobile\\), lightbox with keyboard nav\n- Rebuild Navbar: full-screen mobile overlay with nav links + social icons, transparent→solid on scroll, fix event listener memory leak\n- Improve SectionServices copy to match band voice and target markets\n- Fix email typo in SectionContact \\(basilisvs → basiliscvs\\)\n- Remove debug console.log from gatsby-config.js\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(source ~/.nvm/nvm.sh && nvm use 20 && pnpm clean 2>&1)",
+      "Bash(git add \\\\\n  src/components/section.members/ \\\\\n  src/components/navbar/Navbar.js \\\\\n  src/pages/index.js \\\\\n  src/images/CHRISV6.png 2>&1 && git status --short)",
+      "Bash(git add src/images/DUENDE.svg src/images/Exquisito.svg 2>&1 && git status --short)",
+      "Bash(source ~/.nvm/nvm.sh && node --version && nvm current)",
+      "Bash(source ~/.nvm/nvm.sh && nvm use 20 && pnpm rebuild lmdb msgpackr-extract sharp 2>&1)",
+      "Bash(git push origin main)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git -C /Users/mind/Projects/basiliscvs ls-files src/images/assets/)",
+      "Bash(grep '\\\\.JPG$')",
+      "Bash(pnpm add *)",
+      "Bash(pnpm install *)",
+      "mcp__claude_ai_Netlify__netlify-project-services-reader",
+      "mcp__claude_ai_Netlify__netlify-deploy-services-reader",
+      "Bash(npx lighthouse *)",
+      "Bash(node *)"
     ]
   }
 }

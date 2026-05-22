@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image"
 import "./section.gallery.css"
 
 const SectionGallery = () => {
@@ -21,7 +21,8 @@ const SectionGallery = () => {
           name
           publicURL
           childImageSharp {
-            gatsbyImageData(width: 600, quality: 82, placeholder: BLURRED)
+            thumb: gatsbyImageData(width: 600, quality: 82, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            large: gatsbyImageData(width: 1400, quality: 85, formats: [AUTO, WEBP, AVIF])
           }
         }
       }
@@ -68,7 +69,7 @@ const SectionGallery = () => {
   return (
     <section id="gallery" className="gallery-section">
       <div className="gallery-inner">
-        <h4 className="section-header gallery-title">Memento Mori</h4>
+        <h2 className="section-header gallery-title">Memento Mori</h2>
         <p className="gallery-subtitle">El pasado que nos define</p>
 
         {/* Desktop: masonry grid */}
@@ -81,7 +82,7 @@ const SectionGallery = () => {
               aria-label={`Ver foto ${img.name}`}
             >
               <GatsbyImage
-                image={getImage(img.childImageSharp)}
+                image={getImage(img.childImageSharp.thumb)}
                 alt={img.name}
                 className="masonry-img"
               />
@@ -100,7 +101,7 @@ const SectionGallery = () => {
               aria-label={`Ver foto ${img.name}`}
             >
               <GatsbyImage
-                image={getImage(img.childImageSharp)}
+                image={getImage(img.childImageSharp.thumb)}
                 alt={img.name}
                 className="carousel-img"
               />
@@ -161,7 +162,7 @@ const SectionGallery = () => {
             onClick={e => e.stopPropagation()}
           >
             <img
-              src={images[lightbox.index].publicURL}
+              src={getSrc(images[lightbox.index].childImageSharp.large)}
               alt={images[lightbox.index].name}
               className="lightbox-img"
             />

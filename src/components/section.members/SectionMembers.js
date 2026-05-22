@@ -62,7 +62,7 @@ const SectionMembers = () => (
         />
       </div>
       <p className="members-eyebrow">Choose your fighter</p>
-      <h4 className="section-header members-title">The Fangs</h4>
+      <h2 className="section-header members-title">The Fangs</h2>
 
       <div className="members-scroll">
         {members.map(member => (
@@ -77,7 +77,7 @@ const SectionMembers = () => (
             </div>
 
             <div className="member-card__body">
-              <h5 className="member-card__name">{member.name}</h5>
+              <h3 className="member-card__name">{member.name}</h3>
 
               <div className="card-separator" />
 

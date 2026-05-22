@@ -24,7 +24,7 @@ const SectionAbout = () => {
   return (
     <section id="about" className="about-container">
       <div className="about-inner">
-        <h4 className="section-header about-title">Quiénes Somos</h4>
+        <h2 className="section-header about-title">Quiénes Somos</h2>
 
         <div className="about-grid">
           <div className="about-text-col">
