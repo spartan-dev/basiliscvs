@@ -1,0 +1,223 @@
+.members-section {
+  background: #080808;
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle red glow top-left */
+.members-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(169, 17, 42, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.members-inner {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ── ESTANDARTE ─────────────────────────────────────── */
+.members-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.members-banner__img {
+  height: 320px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 24px rgba(169, 17, 42, 0.35));
+  animation: bannerFloat 4s ease-in-out infinite;
+}
+
+@keyframes bannerFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+@media screen and (max-width: 480px) {
+  .members-banner__img {
+    height: 220px;
+  }
+}
+
+/* ── HEADER ─────────────────────────────────────────── */
+.members-eyebrow {
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #a9112a;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.members-title {
+  color: white;
+  text-align: center;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 36.32px;
+  margin: 0 auto 52px;
+  position: relative;
+}
+
+.members-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(-180deg, #44355b 0%, #a9112a 96%);
+  margin: 16px auto 0;
+}
+
+/* ── SCROLL CONTAINER ───────────────────────────────── */
+.members-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 16px 4px 32px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #44355b #0d0d0d;
+}
+
+.members-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.members-scroll::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+.members-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #44355b, #a9112a);
+  border-radius: 2px;
+}
+
+/* ── CARD ───────────────────────────────────────────── */
+.member-card {
+  flex-shrink: 0;
+  width: 240px;
+  scroll-snap-align: center;
+  background: #0d0d0d;
+  border: 1px solid rgba(68, 53, 91, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-10px);
+  border-color: #a9112a;
+  box-shadow: 0 8px 32px rgba(169, 17, 42, 0.25), 0 0 0 1px rgba(169, 17, 42, 0.15);
+}
+
+/* Portrait */
+.member-card__portrait {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #111;
+  overflow: hidden;
+}
+
+.member-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  filter: grayscale(20%);
+}
+
+.member-card:hover .member-card__img {
+  transform: scale(1.04);
+  filter: grayscale(0%);
+}
+
+.member-card__portrait-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, #0d0d0d 100%);
+  pointer-events: none;
+}
+
+/* Body */
+.member-card__body {
+  padding: 16px 20px 20px;
+}
+
+.member-card__name {
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: white;
+  margin: 0 0 12px;
+}
+
+/* reuse .card-separator from services */
+.member-card .card-separator {
+  width: 100%;
+  height: 1px;
+  background: rgba(68, 53, 91, 0.5);
+  margin: 12px 0;
+  position: relative;
+}
+
+.member-card .card-separator::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #44355b;
+}
+
+/* Stats */
+.member-card__stat {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.member-card__icon {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.member-card__icon--red {
+  color: #a9112a;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────── */
+@media screen and (max-width: 768px) {
+  .member-card {
+    width: 80vw;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .member-card {
+    width: 85vw;
+  }
+}
