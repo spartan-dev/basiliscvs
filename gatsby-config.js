@@ -1,4 +1,9 @@
+const adapter = require("gatsby-adapter-netlify").default
+
 module.exports = {
+  adapter: adapter({
+    excludeDatastoreFromEngineFunction: false,
+  }),
   siteMetadata: {
     title: `Basiliscvs Medieval Folk`,
     description: `Medieval Folk Music Bagpipes and drums`,
