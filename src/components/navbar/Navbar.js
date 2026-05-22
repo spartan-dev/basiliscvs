@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: "Nosotros", id: "about" },
   { label: "Fangs", id: "members" },
   { label: "Servicios", id: "services" },
+  { label: "En Vivo", id: "videos" },
   { label: "Galería", id: "gallery" },
   { label: "Contacto", id: "contact" },
 ]

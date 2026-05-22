@@ -6,6 +6,7 @@ import Header from "../components/header"
 import SectionAbout from "../components/section.about"
 import SectionMembers from "../components/section.members"
 import SectionServices from "../components/sectionService"
+import SectionVideos from "../components/section.videos"
 import SectionContact from "../components/section.contact"
 import SectionGallery from "../components/section.gallery"
 // SectionEvents kept as reference, replaced by SectionGallery
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <SectionAbout />
     <SectionMembers />
     <SectionServices />
+    <SectionVideos />
     <SectionGallery />
     <SectionContact />
   </Layout>
