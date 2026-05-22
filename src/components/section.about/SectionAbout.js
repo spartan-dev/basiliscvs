@@ -1,13 +1,23 @@
 import React from "react"
 import SkullIcon from "../../images/svg/BASILISCUS_CRANEO2.inline.svg"
-import bandPhoto from "../../images/assets/basili1.jpg"
+import bandPhoto from "../../images/assets/JARDINES5.jpg"
 import "./section.about.css"
 
 const tags = [
   { label: "Estilo", value: "Neo folk medieval · Folk oscuro · Música ritual" },
-  { label: "Instrumentos", value: "Gaitas medievales alemanas · Davul · Surdo · Djembe" },
-  { label: "Sonido", value: "Antiguo · Tribal · Ceremonial · Místico · Bailable" },
-  { label: "Ideal para", value: "Festivales · Ferias medievales · Bodas · Eventos culturales · Fiestas privadas" },
+  {
+    label: "Instrumentos",
+    value: "Gaitas medievales alemanas · Davul · Surdo · Djembe",
+  },
+  {
+    label: "Sonido",
+    value: "Antiguo · Tribal · Ceremonial · Místico · Bailable",
+  },
+  {
+    label: "Ideal para",
+    value:
+      "Festivales · Ferias medievales · Bodas · Eventos culturales · Fiestas privadas",
+  },
 ]
 
 const SectionAbout = () => {

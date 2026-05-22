@@ -14,35 +14,22 @@ const Button = ({
   location = "/",
   external = false,
 }) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle)
-    ? buttonStyle
-    : STYLES[0]
+  const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
+  const className = `btn ${checkButtonStyle} ${checkButtonSize}`
+
+  if (external) {
+    return (
+      <a href={location} className={className} target="_blank" rel="noopener noreferrer">
+        {children}
+      </a>
+    )
+  }
 
   return (
-    <>
-      {external ? (
-        <a href={location} target="_blank" rel="noopener noreferrer">
-          <button
-            className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-            type={type}
-            onClick={onClick}
-          >
-            {children}
-          </button>
-        </a>
-      ) : (
-        <Link to={location} className="btn-mobile">
-          <button
-            className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-            type={type}
-            onClick={onClick}
-          >
-            {children}
-          </button>
-        </Link>
-      )}
-    </>
+    <Link to={location} className={className} onClick={onClick} type={type}>
+      {children}
+    </Link>
   )
 }
 

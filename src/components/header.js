@@ -1,50 +1,43 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import Button from "./button"
-import "../styles/index.css"
+import React from "react"
 import stormIntro from "../video/stormPRO.mp4"
+import "../styles/index.css"
 
-const Header = ({ siteTitle }) => (
+const scrollToContact = e => {
+  e.preventDefault()
+  const el = document.getElementById("contact")
+  if (el) el.scrollIntoView({ behavior: "smooth" })
+}
+
+const Header = () => (
   <div className="hero-container">
-    <video preload="auto" autoPlay={true} loop={true} muted={true}>
+    <video autoPlay loop muted playsInline>
       <source src={stormIntro} type="video/mp4" />
-      Your browser does not support HTML5 video
     </video>
-    {/* Surge, cane et salta. */}
-    <h1>#feravicanus</h1>
-    <h1 className="for-mobil">Basiliscus</h1>
-    <p className="for-mobil">#feravicanus. </p>
-    {/*levantate, canta y salta. Grita desde tu corazon y regocijate */}
-    <div className="hero-btns">
-      {/*  <Button
-        className="btns"
-        buttonStyle="btn--outline"
-        buttonSize="btn--large"
-      >
-        Lets Rock
-      </Button> */}
 
-      <Button
-        className="btns"
-        buttonStyle="btn--outline"
-        buttonSize="btn--large"
-        external={true}
-        location={"https://www.youtube.com/channel/UCMNGc5s7Gmzxrm0X1GYsQHg"}
-      >
-        {/* enviar al canal de youtube */}
-        YouTube
-        <i className="fas fa-play-circle" />
-      </Button>
+    <div className="hero-overlay" />
+
+    <div className="hero-content">
+      <p className="hero-tagline">Neo Folk Medieval</p>
+      <h1 className="hero-title">FERAVICANUS</h1>
+      <div className="hero-btns">
+        <a
+          href="#contact"
+          className="hero-btn hero-btn--primary"
+          onClick={scrollToContact}
+        >
+          Contrataciones
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCMNGc5s7Gmzxrm0X1GYsQHg"
+          className="hero-btn hero-btn--outline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube <i className="fas fa-play-circle" />
+        </a>
+      </div>
     </div>
   </div>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
