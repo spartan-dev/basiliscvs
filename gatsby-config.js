@@ -6,8 +6,8 @@ module.exports = {
   }),
   siteMetadata: {
     title: `Basiliscvs Medieval Folk`,
-    description: `Medieval Folk Music Bagpipes and drums`,
-    author: `@salemm`,
+    description: `Banda de Neo Folk Medieval de la Ciudad de México. Gaitas, percusiones y voces que evocan los sonidos del medioevo. Contrataciones para eventos, festivales y bodas.`,
+    author: `@basiliscvs`,
     siteUrl: `https://www.basiliscvs.org`,
   },
   plugins: [
@@ -44,6 +44,7 @@ module.exports = {
         icon: `src/images/BASILISCUS_CRANEO2.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
