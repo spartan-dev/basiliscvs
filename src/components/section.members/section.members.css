@@ -31,11 +31,14 @@
 }
 
 .members-banner__img {
-  height: 320px;
-  width: auto;
-  object-fit: contain;
+  height: 320px !important;
+  width: auto !important;
   filter: drop-shadow(0 0 24px rgba(169, 17, 42, 0.35));
   animation: bannerFloat 4s ease-in-out infinite;
+}
+
+.members-banner__img img {
+  object-fit: contain !important;
 }
 
 @keyframes bannerFloat {
@@ -45,7 +48,7 @@
 
 @media screen and (max-width: 480px) {
   .members-banner__img {
-    height: 220px;
+    height: 220px !important;
   }
 }
 

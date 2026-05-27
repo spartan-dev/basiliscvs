@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@fontsource/pt-sans':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/raleway':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/staatliches':
+        specifier: ^5.2.8
+        version: 5.2.8
       gatsby:
         specifier: ^5.14.0
         version: 5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@2.19.0)(typescript@6.0.3)
@@ -801,6 +810,15 @@ packages:
 
   '@expo/sudo-prompt@9.3.2':
     resolution: {integrity: sha512-HHQigo3rQWKMDzYDLkubN5WQOYXJJE2eNqIQC2axC2iO3mHdwnIR7FgZVvHWtBwAdzBgAP0ECp8KqS8TiMKvgw==}
+
+  '@fontsource/pt-sans@5.2.8':
+    resolution: {integrity: sha512-b8nBGHMVwfe21IWqERlMrzIs+L/Vm3QNGbnET3H1vfclAScWExbN17N/z/dJcyPgvrcenbJDv1H3f5hTAEbcVQ==}
+
+  '@fontsource/raleway@5.2.8':
+    resolution: {integrity: sha512-OATNM+J4XniKQRlI1e67v3euOnCUiXwpqgMofomKc5JNYOq0JPE6E5uTXMnFaZejKN1Z7s05JrHpmYB7/tg1Fw==}
+
+  '@fontsource/staatliches@5.2.8':
+    resolution: {integrity: sha512-z52At6eCXmoQZKGSECzd6FqQSEmvWE5okTajgTaogjS2KP0fhgWCgd8KZzUQYi/phGE65u0M28AjhNdy1xbnbw==}
 
   '@gatsbyjs/parcel-namer-relative-to-cwd@2.16.0':
     resolution: {integrity: sha512-E05myRVDUgUXS41wWxBOc0wPub1WAty3M6bO2vGctToXO11Lw9tci9banlSQojBB12ExsmRqNW90FxtVNTbfQA==}
@@ -7225,6 +7243,12 @@ snapshots:
       - supports-color
 
   '@expo/sudo-prompt@9.3.2': {}
+
+  '@fontsource/pt-sans@5.2.8': {}
+
+  '@fontsource/raleway@5.2.8': {}
+
+  '@fontsource/staatliches@5.2.8': {}
 
   '@gatsbyjs/parcel-namer-relative-to-cwd@2.16.0(@parcel/core@2.8.3)':
     dependencies:

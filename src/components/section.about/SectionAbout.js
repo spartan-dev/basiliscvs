@@ -1,6 +1,6 @@
 import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import SkullIcon from "../../images/svg/BASILISCUS_CRANEO2.inline.svg"
-import bandPhoto from "../../images/assets/JARDINES5.jpg"
 import "./section.about.css"
 
 const tags = [
@@ -54,10 +54,16 @@ const SectionAbout = () => {
 
           <div className="about-image-col">
             <div className="about-image-frame">
-              <img
-                src={bandPhoto}
+              <StaticImage
+                src="../../images/assets/JARDINES5.jpg"
+                width={480}
+                height={480}
+                quality={82}
+                formats={["auto", "webp", "avif"]}
                 alt="Basiliscvs en vivo"
                 className="about-photo"
+                imgStyle={{ objectFit: "cover", width: "100%", height: "100%" }}
+                placeholder="blurred"
               />
               <div className="about-image-overlay" />
             </div>

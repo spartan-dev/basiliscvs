@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/ssr-apis/
- */
+import React from "react"
 
-// You can delete this file if you're not using it
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
+    <script
+      key="fontawesome"
+      src="https://kit.fontawesome.com/8b2ab9f0eb.js"
+      crossOrigin="anonymous"
+      defer={true}
+    />,
+  ])
+}

@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "salemm  <s.e.jugr@gmail.com>",
   "dependencies": {
+    "@fontsource/pt-sans": "^5.2.8",
+    "@fontsource/raleway": "^5.2.8",
+    "@fontsource/staatliches": "^5.2.8",
     "gatsby": "^5.14.0",
     "gatsby-adapter-netlify": "^1.4.0",
     "gatsby-plugin-google-gtag": "^5.16.0",

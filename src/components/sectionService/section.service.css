@@ -56,7 +56,8 @@
   word-break: break-word;
 }
 .skull-icon {
-  height: 60px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .card-header {
   user-select: none;
@@ -81,6 +82,8 @@
 }
 .circle-style {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 3rem;
   height: 3rem;
 }
@@ -114,8 +117,3 @@
   padding-top: 15px;
 }
 
-@media screen and (max-width: 960px) {
-  .circle-style {
-    height: 1.15rem;
-  }
-}

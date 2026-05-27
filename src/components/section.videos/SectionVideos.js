@@ -62,7 +62,7 @@ const TikTokEmbed = ({ id }) => {
         <button
           className="tiktok-placeholder"
           onClick={() => setActive(true)}
-          aria-label="Cargar video de TikTok"
+          aria-label="Ver clip @basiliscvs"
         >
           <i className="fab fa-tiktok tiktok-placeholder__icon" />
           <span className="tiktok-placeholder__label">Ver clip</span>

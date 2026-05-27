@@ -30,7 +30,7 @@
   flex-wrap: wrap;
   -moz-box-pack: center;
   justify-content: center;
-  margin: -30px auto -50px;
+  margin: -30px auto 0;
 }
 
 .contact-card {
@@ -80,10 +80,13 @@
 }
 .icon-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   pointer-events: none;
 }
 .skull-icon {
-  height: 60px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .icon {
   pointer-events: none;
@@ -114,7 +117,7 @@
 }
 
 .contact-form-wrapper {
-  padding: 0 0 60px;
+  padding: 48px 0 60px;
 }
 
 .contact-form {
@@ -259,11 +262,6 @@
 }
 
 @media screen and (max-width: 961px) {
-  .icon-container {
-    height: 1.15rem;
-    margin-right: 1.15rem;
-  }
-
   .contact-form {
     padding: 36px 24px 32px;
   }

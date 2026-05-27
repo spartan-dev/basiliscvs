@@ -1,10 +1,10 @@
 import React from "react"
-import EstandarteImg from "../../images/ESTANDARTE.png"
+import { StaticImage } from "gatsby-plugin-image"
 import KainImg from "../../images/KAIN.svg"
 import KarameloImg from "../../images/KARAMELO.svg"
 import HerrImg from "../../images/Herr_Dunkel_Pfeifer.svg"
 import MisticoImg from "../../images/Mistico.svg"
-import ChrisImg from "../../images/CHRISV6.png"
+import ChrisImg from "../../images/CHRISV6.webp"
 import "./section.members.css"
 
 const members = [
@@ -55,10 +55,15 @@ const SectionMembers = () => (
   <section id="members" className="members-section">
     <div className="members-inner">
       <div className="members-banner">
-        <img
-          src={EstandarteImg}
+        <StaticImage
+          src="../../images/ESTANDARTE.png"
+          layout="fixed"
+          height={640}
+          quality={82}
+          formats={["auto", "webp", "avif"]}
           alt="Estandarte Basiliscvs"
           className="members-banner__img"
+          placeholder="blurred"
         />
       </div>
       <p className="members-eyebrow">Choose your fighter</p>
@@ -72,6 +77,7 @@ const SectionMembers = () => (
                 src={member.image}
                 alt={member.alt}
                 className="member-card__img"
+                loading="lazy"
               />
               <div className="member-card__portrait-glow" />
             </div>

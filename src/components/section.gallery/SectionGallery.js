@@ -21,7 +21,7 @@ const SectionGallery = () => {
           name
           publicURL
           childImageSharp {
-            thumb: gatsbyImageData(width: 600, quality: 82, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            thumb: gatsbyImageData(width: 420, quality: 82, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
             large: gatsbyImageData(width: 1400, quality: 85, formats: [AUTO, WEBP, AVIF])
           }
         }
